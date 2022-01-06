@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="3dp"
+        android:background="@drawable/background_item_search"
+        android:padding="9dp">
+
+        <!-- TextView title -->
+        <TextView
+            android:id="@+id/tv_title_country_region"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Country/Region: "
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_title_confirmed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_title_country_region"
+            android:text="Confirmed: "
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_title_deaths"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_title_confirmed"
+            android:text="Deaths: "
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_title_recovered"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_title_deaths"
+            android:text="Recovered: "
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+<!--        add-->
+        <TextView
+            android:id="@+id/tv_title_treating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_title_recovered"
+            android:text="Treating: "
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_title_casesToday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_title_treating"
+            android:text="Cases Today: "
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+        <!-- TextView số liệu thống kê -->
+
+        <TextView
+            android:id="@+id/tv_country"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/tv_title_country_region"
+            android:text="Vietnam"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="italic|bold" />
+
+        <TextView
+            android:id="@+id/tv_confirmed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_country"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/tv_title_confirmed"
+            android:text="2075"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="italic" />
+
+        <TextView
+
+            android:id="@+id/tv_deaths"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_confirmed"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/tv_title_deaths"
+            android:text="35"
+            android:textColor="#EF0051"
+            android:textSize="18sp"
+            android:textStyle="italic|bold" />
+
+        <TextView
+            android:id="@+id/tv_recovered"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_deaths"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/tv_title_recovered"
+            android:text="1997"
+            android:textColor="@color/yellow"
+            android:textSize="18sp"
+            android:textStyle="italic" />
+
+<!--        add-->
+        <TextView
+
+            android:id="@+id/tv_treating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_recovered"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/tv_title_treating"
+            android:text="99"
+            android:textColor="#4CAF50"
+            android:textSize="18sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/tv_casesToday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_treating"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/tv_title_casesToday"
+            android:text="98"
+            android:textColor="#E91E63"
+            android:textSize="18sp"
+            android:textStyle="italic|bold" />
+
+
+    </RelativeLayout>
+</layout>

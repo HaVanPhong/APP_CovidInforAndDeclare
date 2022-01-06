@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutUsFragment">
+
+    <RelativeLayout
+        android:id="@+id/relative_layout_faq"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#C8FF9800"
+        android:padding="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="FAQ"
+            android:textColor="#E91E63"
+            android:textSize="50sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relative_layout_faq"
+        android:background="@color/cl_app"
+        android:padding="16dp">
+        <TextView
+            android:id="@+id/tv_faq_01"
+            android:layout_marginBottom="15dp"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/yellow"
+            android:text="1. Ứng dụng Search Ncovi cung cấp số liệu chính xác theo api của bộ y tế"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/tv_faq_02"
+            android:layout_below="@+id/tv_faq_01"
+            android:layout_marginBottom="15dp"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/yellow"
+            android:text="2. Ứng dụng không chứa phần mềm độc hại"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/tv_faq_03"
+            android:layout_below="@+id/tv_faq_02"
+            android:layout_marginBottom="15dp"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/yellow"
+            android:text="3. Ứng dụng cần có mạng internet để cập nhật số liệu, nếu không có internet người dùng sẽ không thể xem thông tin?"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/tv_faq_04"
+            android:layout_below="@+id/tv_faq_03"
+            android:layout_marginBottom="15dp"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/yellow"
+            android:text="4. Search Ncovi không thu bất kỳ khoản phí nào của người sử dụng"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/tv_faq_05"
+            android:layout_below="@+id/tv_faq_04"
+            android:layout_marginBottom="15dp"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/yellow"
+            android:text="5. Dữ liệu thu thập và lưu trong máy không hề tốn bộ nhớ"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/tv_faq_06"
+            android:layout_below="@+id/tv_faq_05"
+            android:layout_marginBottom="15dp"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/yellow"
+            android:text="6. Khi tìm kiếm, hãy nhập tên tỉnh thành, khu vực"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
+

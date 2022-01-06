@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:background="@color/cl_app"
+        android:layout_height="match_parent"
+        tools:context=".RulesAndPolicyFragment">
+
+        <!--    <FrameLayout-->
+        <!--        android:layout_width="match_parent"-->
+        <!--        android:layout_height="match_parent">-->
+        <!--        -->
+        <!--    </FrameLayout>-->
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/linear_tips"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#C8FF9800"
+            android:padding="15dp">
+
+            <ImageView
+                android:id="@+id/img_covid_tip_01"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_weight="1"
+                android:src="@drawable/covid_tips" />
+
+            <ImageView
+                android:id="@+id/img_covid_tip_02"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_toRightOf="@+id/img_covid_tip_01"
+                android:layout_weight="1"
+                android:src="@drawable/covid_tips_02" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/l2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/linear_tips"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/tv_version"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Search Ncovi version 1.0"
+                android:textColor="@color/yellow"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_review_app_01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_version"
+                android:layout_marginTop="15dp"
+                android:text="Ứng dụng thống kê số liệu về tình hình dịch bệnh Covid 19 trên toàn Việt Nam. Số liệu thực tế được cung cấp bởi api của Bộ y tế chính xác đúng thời điểm hiện tại. Dữ liệu được lọc theo từng tỉnh thành và khu vực."
+                android:textColor="@color/yellow"
+                android:textSize="18sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tv_review_app_02"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_review_app_01"
+                android:layout_marginTop="15dp"
+                android:text="Search Ncovi sử dụng API để tải dữ liệu về, yêu cầu người dùng cấp quyền truy cập Internet."
+                android:textColor="@color/yellow"
+                android:textSize="18sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tv_review_app_03"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_review_app_02"
+                android:layout_marginTop="15dp"
+                android:text="Chi tiết API xem tại:"
+                android:textColor="@color/yellow"
+                android:textSize="18sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/tv_api"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_review_app_03"
+                android:layout_marginTop="0dp"
+                android:text="https://static.pipezero.com/covid/data.json"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="italic" />
+
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_below="@id/l2"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Các vùng trọng điểm"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:paddingLeft="15dp"
+                android:textColor="@color/yellow"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Vùng đỏ"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:textColor="#F40909"
+                android:textStyle="bold"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:id="@+id/revVungDo"
+                android:layout_height="170dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Vùng cam"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:textColor="#FFC107"
+                android:textStyle="bold"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:id="@+id/revVungCam"
+                android:layout_height="170dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Vùng xanh"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                android:textColor="#4CAF50"
+                android:textStyle="bold"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:id="@+id/revVungXanh"
+                android:layout_height="170dp"/>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</ScrollView>

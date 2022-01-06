@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_search_result"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="12dp"
+    android:paddingTop="8dp"
+    android:paddingRight="12dp"
+    android:paddingBottom="12dp"
+    android:background="@color/cl_app"
+    android:scrollbarAlwaysDrawVerticalTrack="true"
+    tools:context=".SearchFragment">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/covid_19" />
+
+    <EditText
+        android:id="@+id/edt_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/background_search_box"
+        android:drawableEnd="@drawable/ic_baseline_search_24"
+        android:drawablePadding="15dp"
+        android:drawableTint="@color/white"
+        android:enabled="true"
+        android:hint="Search"
+        android:padding="7dp"
+        android:paddingStart="10sp"
+        android:paddingLeft="10dp"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="20sp"
+        android:textStyle="italic" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_search_result"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btn_update_data"
+        android:layout_below="@+id/edt_search"
+        android:layoutAnimation="@anim/layout_silde_right" />
+
+    <Button
+        android:layout_marginTop="5dp"
+        android:id="@+id/btn_update_data"
+        android:layout_width="wrap_content"
+        android:backgroundTint="@color/cl_element"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:text="Update"
+        android:textAllCaps="false"
+        android:textStyle="italic" />
+
+    <!--    <FrameLayout-->
+    <!--        android:id="@+id/fragment_container"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        android:layout_below="@+id/edt_search">-->
+
+
+    <!--    </FrameLayout>-->
+
+
+</RelativeLayout>
